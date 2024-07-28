@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TransHistory</title>
+    <link rel="stylesheet" href="WorldPedia.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="container.css">
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            background: #eee;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 400px;
+            margin-top: 80px;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            position: relative;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .form {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px;
+        }
+
+        .contact-info {
+            width: 45%;
+        }
+
+        .contact-info .title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .contact-info .text {
+            font-size: 16px;
+            color: #777;
+            margin: 20px 0;
+        }
+
+        .info .information {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .info .icon {
+            width: 28px;
+            margin-right: 10px;
+        }
+
+        .social-media .social-icons a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            margin-right: 15px;
+        }
+
+        .contact-form {
+            width: 50%;
+            position: relative;
+        }
+
+        .contact-form .title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .input-container {
+            position: relative;
+            margin: 40px 0;
+        }
+
+        .input-container input,
+        .input-container textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+            resize: none;
+        }
+
+        .input-container label {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 16px;
+            color: #777;
+            transition: 0.2s;
+        }
+
+        .input-container input:focus + label,
+        .input-container input:not(:placeholder-shown) + label,
+        .input-container textarea:focus + label,
+        .input-container textarea:not(:placeholder-shown) + label {
+            top: -20px;
+            left: 10px;
+            font-size: 12px;
+            color: #0d0e0e;
+        }
+
+        .input-container.textarea {
+            height: 150px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #0d0e0e;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #0d0e0e;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="images/Logo-removebg-preview.png" height="40px" width="310px">
+        <nav class="navigation">
+            <a href="Home.html">Home</a>
+            <a href="Internasional.html">Internasional</a>
+            <a href="Nasional.html">Nasional</a>
+            <a href="Contact&Setting.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="form">
+            <div class="contact-info">
+                <h3 class="title">Let's get in touch</h3>
+                <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                    dolorum adipisci recusandae praesentium dicta!
+                </p>
+
+                <div class="info">
+                    <div class="information">
+                        <img src="img/location.png" class="icon" alt=""/>
+                        <p>Dhoho Street 56th , 64123 , Kediri , East Java , Indonesia</p>
+                    </div>
+                    <div class="information">
+                        <img src="img/email.png" class="icon" alt=""/>
+                        <p>Transtory@gmail.com</p>
+                    </div>
+                    <div class="information">
+                        <img src="img/phone.png" class="icon" alt=""/>
+                        <p>+62 857-9115-8503</p>
+                    </div>
+                </div>
+
+                <div class="social-media">
+                    <p>Connect with us :</p>
+                    <div class="social-icons">
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form action="index.html" autocomplete="off">
+                    <h3 class="title">Contact us</h3>
+                    <div class="input-container">
+                        <input type="text" name="name" class="input" required />
+                        <label>Username</label>
+                        <span>Username</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="email" name="email" class="input" required />
+                        <label>Email</label>
+                        <span>Email</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="tel" name="phone" class="input" required />
+                        <label>Phone</label>
+                        <span>Phone</span>
+                    </div>
+                    <div class="input-container textarea">
+                        <textarea name="message" class="input" required></textarea>
+                        <label>Message</label>
+                        <span>Message</span>
+                    </div>
+                    <input type="submit" value="Send" class="btn" />
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

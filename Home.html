@@ -1,0 +1,136 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TransHistory</title>
+    <link rel="stylesheet" href="WorldPedia.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="container.css">
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 400px; /* Adjusted height to make the slider smaller */
+            margin-top: 59px; /* Adjust based on your header height */
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .container {
+            /* border: 2px solid; */
+            margin: 20px auto;
+        }
+
+        .row {
+            margin-bottom: 20px;
+        }
+
+        [class*="flex-"] {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+            text-align: center;
+            box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.28);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="images/Logo-removebg-preview.png" height="40px" width="310px">
+        <nav class="navigation">
+            <a href="Home.html">Home</a>
+            <a href="Internasional.html">Internasional</a>
+            <a href="Nasional.html">Nasional</a>
+            <a href="Contact&Setting.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/selamatdatang.png">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/KTTAsean.png">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/RapaatWakilRakyat.png">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/Capres2024-2029.png">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/YoutefaBridge.png">
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 9000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
+
+

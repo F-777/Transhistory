@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background-color: rgba(21, 21, 22, 0.979);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+.logo {
+  font-size: 2em;
+  color: #fff;
+  user-select: none;
+}
+
+.navigation a {
+  position: relative;
+  font-size: 1.1em;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+.navigation a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .5s;
+}
+
+.navigation a:hover::after {
+  transform: scaleX(1);
+}
+
+.navigation .btnLogin-popup {
+  width: 130px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #fff;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 40px;
+  transition: .5s;
+}
+
+.navigation .btnLogin-popup:hover {
+  background: #fff;
+  color: #ffffff;
+}
+
+/* Added container and row styles below */
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 34.5625em) {
+  .container {
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 56.3125em) {
+  .container {
+    max-width: 123.3rem;
+  }
+}
+
+@media screen and (min-width: 87.5625em) {
+  .container {
+    max-width: 130rem;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+}
+
+.row [class*="flex-"] {
+  width: 100%;
+  max-width: 100%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  min-height: 0.1rem;
+  margin-bottom: 2rem;
+}
+
+.row [class*="flex-"]:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 0em) {
+  .row .flex-sm-1 { flex: 0 0 8.3333333333%; max-width: 8.3333333333%; }
+  .row .flex-sm-2 { flex: 0 0 16.6666666667%; max-width: 16.6666666667%; }
+  .row .flex-sm-3 { flex: 0 0 25%; max-width: 25%; }
+  .row .flex-sm-4 { flex: 0 0 33.3333333333%; max-width: 33.3333333333%; }
+  .row .flex-sm-5 { flex: 0 0 41.6666666667%; max-width: 41.6666666667%; }
+  .row .flex-sm-6 { flex: 0 0 50%; max-width: 50%; }
+  .row .flex-sm-7 { flex: 0 0 58.3333333333%; max-width: 58.3333333333%; }
+  .row .flex-sm-8 { flex: 0 0 66.6666666667%; max-width: 66.6666666667%; }
+  .row .flex-sm-9 { flex: 0 0 75%; max-width: 75%; }
+  .row .flex-sm-10 { flex: 0 0 83.3333333333%; max-width: 83.3333333333%; }
+  .row .flex-sm-11 { flex: 0 0 91.6666666667%; max-width: 91.6666666667%; }
+  .row .flex-sm-12 { flex: 0 0 100%; max-width: 100%; }
+}
+
+@media screen and (min-width: 34.5625em) {
+  .row .flex-md-1, .row .flex-md-2, .row .flex-md-3, .row .flex-md-4, .row .flex-md-5, .row .flex-md-6, .row .flex-md-7, .row .flex-md-8, .row .flex-md-9, .row .flex-md-10, .row .flex-md-11, .row .flex-md-12 { margin-bottom: 0; }
+  .row .flex-md-1 { flex: 0 0 8.3333333333%; max-width: 8.3333333333%; }
+  .row .flex-md-2 { flex: 0 0 16.6666666667%; max-width: 16.6666666667%; }
+  .row .flex-md-3 { flex: 0 0 25%; max-width: 25%; }
+  .row .flex-md-4 { flex: 0 0 33.3333333333%; max-width: 33.3333333333%; }
+  .row .flex-md-5 { flex: 0 0 41.6666666667%; max-width: 41.6666666667%; }
+  .row .flex-md-6 { flex: 0 0 50%; max-width: 50%; }
+  .row .flex-md-7 { flex: 0 0 58.3333333333%; max-width: 58.3333333333%; }
+  .row .flex-md-8 { flex: 0 0 66.6666666667%; max-width: 66.6666666667%; }
+  .row .flex-md-9 { flex: 0 0 75%; max-width: 75%;
+    .row .flex-md-10 { flex: 0 0 83.3333333333%; max-width: 83.3333333333%; }
+    .row .flex-md-11 { flex: 0 0 91.6666666667%; max-width: 91.6666666667%; }
+    .row .flex-md-12 { flex: 0 0 100%; max-width: 100%; }
+  }
+  
+  @media screen and (min-width: 56.3125em) {
+    .row .flex-lg-1, .row .flex-lg-2, .row .flex-lg-3, .row .flex-lg-4, .row .flex-lg-5, .row .flex-lg-6, .row .flex-lg-7, .row .flex-lg-8, .row .flex-lg-9, .row .flex-lg-10, .row .flex-lg-11, .row .flex-lg-12 { margin-bottom: 0; }
+    .row .flex-lg-1 { flex: 0 0 8.3333333333%; max-width: 8.3333333333%; }
+    .row .flex-lg-2 { flex: 0 0 16.6666666667%; max-width: 16.6666666667%; }
+    .row .flex-lg-3 { flex: 0 0 25%; max-width: 25%; }
+    .row .flex-lg-4 { flex: 0 0 33.3333333333%; max-width: 33.3333333333%; }
+    .row .flex-lg-5 { flex: 0 0 41.6666666667%; max-width: 41.6666666667%; }
+    .row .flex-lg-6 { flex: 0 0 50%; max-width: 50%; }
+    .row .flex-lg-7 { flex: 0 0 58.3333333333%; max-width: 58.3333333333%; }
+    .row .flex-lg-8 { flex: 0 0 66.6666666667%; max-width: 66.6666666667%; }
+    .row .flex-lg-9 { flex: 0 0 75%; max-width: 75%; }
+    .row .flex-lg-10 { flex: 0 0 83.3333333333%; max-width: 83.3333333333%; }
+    .row .flex-lg-11 { flex: 0 0 91.6666666667%; max-width: 91.6666666667%; }
+    .row .flex-lg-12 { flex: 0 0 100%; max-width: 100%; }
+  }
+  
+  @media screen and (min-width: 87.5625em) {
+    .row .flex-xl-1, .row .flex-xl-2, .row .flex-xl-3, .row .flex-xl-4, .row .flex-xl-5, .row .flex-xl-6, .row .flex-xl-7, .row .flex-xl-8, .row .flex-xl-9, .row .flex-xl-10, .row .flex-xl-11, .row .flex-xl-12 { margin-bottom: 0; }
+    .row .flex-xl-1 { flex: 0 0 8.3333333333%; max-width: 8.3333333333%; }
+    .row .flex-xl-2 { flex: 0 0 16.6666666667%; max-width: 16.6666666667%; }
+    .row .flex-xl-3 { flex: 0 0 25%; max-width: 25%; }
+    .row .flex-xl-4 { flex: 0 0 33.3333333333%; max-width: 33.3333333333%; }
+    .row .flex-xl-5 { flex: 0 0 41.6666666667%; max-width: 41.6666666667%; }
+    .row .flex-xl-6 { flex: 0 0 50%; max-width: 50%; }
+    .row .flex-xl-7 { flex: 0 0 58.3333333333%; max-width: 58.3333333333%; }
+    .row .flex-xl-8 { flex: 0 0 66.6666666667%; max-width: 66.6666666667%; }
+    .row .flex-xl-9 { flex: 0 0 75%; max-width: 75%; }
+    .row .flex-xl-10 { flex: 0 0 83.3333333333%; max-width: 83.3333333333%; }
+    .row .flex-xl-11 { flex: 0 0 91.6666666667%; max-width: 91.6666666667%; }
+    .row .flex-xl-12 { flex: 0 0 100%; max-width: 100%; }
+  }
+}
