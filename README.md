@@ -307,4 +307,5 @@ https://github.com/F-777 [ UI UX & Frontend ]
 
 # Instagram : <br> 
 <br> https://www.instagram.com/revoadmojo29/ 
+<br> https://www.instagram.com/furina_torres/
 <br> https://www.instagram.com/ryanair_airbus_a350_/
