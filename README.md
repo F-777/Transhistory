@@ -302,5 +302,5 @@ discussion on topic and respect the opinions of others.
 [converter-readme]: https://github.com/twbs/bootstrap-sass/blob/master/README.md#upstream-converter
 
 Make WIdth 
-https://github.com/JihadZaidan [ Frontend ]
-httos://github.com/F-777 [ UI UX & Frontend ]
+https://github.com/JihadZaidan [ Frontend ] <br>
+https://github.com/F-777 [ UI UX & Frontend ]
